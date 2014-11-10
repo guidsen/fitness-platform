@@ -1,3 +1,5 @@
+$main_color: #ABB7B7;
+
 .workout-container {
   background-color: #FAFAFA;
   margin: 0px 20px 20px 0px;
@@ -59,10 +61,13 @@
     }
 
     .info .fa {
-      color: #2FA185;
+      //color: $main_color;
       width: 15px;
     }
   }
+
+  // testen
+  &:first-child .info .fa{ color: $main_color; }
 
   .workout-overlay {
     display: none;
