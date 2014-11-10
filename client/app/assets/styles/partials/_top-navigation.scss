@@ -1,0 +1,15 @@
+.top-navigation.navbar {
+  background-color: $main_color;
+  border: 0px;
+  border-bottom: 1px solid darken($main_color, 10);
+  border-radius: 0px;
+  margin-bottom: 0px;
+
+  .navbar-nav > .active > a {
+    background-color: darken($main_color, 5);
+  }
+
+  .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    background-color: darken($main_color, 10);
+  }
+}

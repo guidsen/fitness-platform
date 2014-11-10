@@ -1,0 +1,70 @@
+.side-navigation {
+  .nav-stacked > li + li {
+    margin: 0px;
+  }
+
+  .well {
+    padding: 10px 0px 0px 0px;
+    background-color: #f9f9f9;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .nav-header {
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #434A54;
+  }
+
+  .nav-pills > li > a {
+    border-radius: 0px;
+    color: #656D78;
+  }
+
+  .nav-pills > li .fa {
+    width: 20px;
+    color: #999DA3;
+  }
+
+  .nav-pills > li.active > a {
+    color: #434A54;
+    border-right: 5px solid lighten($main_color, 20);
+    background-color: inherit;
+  }
+
+  .nav-pills > li:not(.active) > a:hover {
+    border-right: 5px solid lighten($main_color, 30);
+    background-color: inherit;
+    color: #434A54;
+  }
+
+  .username {
+    background-color: #CCD1D9;
+    height: 40px;
+    line-height: 30px;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    .fa-cog {
+      padding: 5px 0px;
+    }
+  }
+}
+
+.side-navigation .profile-info .profile-picture {
+  padding: 10px 10px;
+}
+
+.side-navigation .profile-info .user-stats {
+  width: 120px;
+  padding: 10px 0px;
+  font-weight: 500;
+}
+
+.side-navigation .profile-info .user-stats p {
+  font-size: 20px;
+  margin: 10px 0px;
+  font-weight: 700;
+}

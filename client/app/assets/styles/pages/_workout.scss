@@ -1,0 +1,84 @@
+.workout-container {
+  background-color: #FAFAFA;
+  margin: 0px 20px 20px 0px;
+  padding: 0px;
+
+  .workout-item {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .workout-item:hover + .workout-overlay {
+    display: block;
+    pointer-events: none;
+  }
+
+  .workout-item:hover {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+  }
+
+  .workout-social {
+    font-size: 13px;
+    background-color: lighten($main_color, 20);
+    overflow: hidden;
+    color: #434a54;
+    padding: 5px 10px;
+    @include box-shadow(0, 1px, 0px, rgba(0, 0, 0, .2));
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left: 1px solid $border_grey;
+    border-right: 1px solid $border_grey;
+
+    .fa {
+      color: #fff;
+      font-size: 16px;
+      padding: 0px 3px;
+    }
+  }
+
+  .workout-inner {
+    overflow: hidden;
+    color: #434a54;
+    padding: 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top: 1px solid #E0E0E0;
+    border-left: 1px solid $border_grey;
+    border-right: 1px solid $border_grey;
+
+    .date {
+      font-size: 23px;
+    }
+
+    .head {
+      font-weight: 600;
+    }
+
+    .info .fa {
+      color: #2FA185;
+      width: 15px;
+    }
+  }
+
+  .workout-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 113px;
+    @include background-opacity(lighten($main_color, 20), 0.8);
+    border-radius: 4px;
+    cursor: pointer;
+
+    .fa {
+      line-height: 113px;
+      font-size: 38px;
+      color: #fff;
+    }
+  }
+}
