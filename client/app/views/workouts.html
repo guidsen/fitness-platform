@@ -2,18 +2,19 @@
     <!--<button type="button" class="btn btn-info">Toevoegen <i class="fa fa-plus"></i></button>-->
 </div>
 <div class="row">
-    <div class="col-md-4 workout-container">
+    <script></script>
+    <div ng-repeat="workout in workouts" class="col-md-4 workout-container">
         <div class="workout-inner">
-            <div class="col-md-2 date">
-                23 <br> jul
+            <div class="col-md-2 date text-center">
+                23<br>jul
             </div>
             <div class="col-md-5 info">
                 Oefeningen: 4 <br>
-                Sets: 20 <br>
-                Sportschool: Fit for Free Den Haag
+                <i class="fa fa-refresh"></i> 20 <br>
+                <i class="fa fa-map-marker"></i> Fit for Free Den Haag
             </div>
             <div class="col-md-5 musclegroups">
-                <div class="head">Spieren beoefend:</div>
+                <div class="head"><i class="fa fa-bars"></i> Spieren beoefend:</div>
                 Buikspieren, Borst, Rug
             </div>
         </div>
