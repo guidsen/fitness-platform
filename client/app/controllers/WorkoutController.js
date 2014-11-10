@@ -2,7 +2,7 @@ var fitnessApp = angular.module('fitnessApp')
 
 fitnessApp.controller('WorkoutController', function ($scope) {
 
-    $scope.test = 'Test $scope';
+    $scope.workouts = [{}, {}, {}, {}, {}];
     console.log($scope.test);
 
 })
