@@ -1,0 +1,95 @@
+.clear-float {
+    clear: both;
+}
+
+.top-navigation.navbar {
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.side-navigation .nav-stacked > li + li {
+    margin: 0px;
+}
+
+.side-navigation .well {
+    padding: 10px 0px 0px 0px;
+    background-color: #f9f9f9;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.side-navigation .nav-header {
+    text-transform: uppercase;
+    padding: 10px 15px 0px;
+    font-weight: bold;
+    color: #434A54;
+}
+
+.side-navigation .nav-pills > li > a {
+    border-radius: 0px;
+    color: #656D78;
+}
+
+.side-navigation .nav-pills > li.active > a {
+    border-right: 5px solid #37BC9B;
+    background-color: inherit;
+}
+
+.side-navigation .nav-pills > li > a:hover {
+    border-right: 5px solid #48CFAD;
+    background-color: inherit;
+    color: #434A54;
+}
+
+.side-navigation .username {
+    background-color: #CCD1D9;
+    height: 40px;
+    line-height: 30px;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.side-navigation .username .fa-cog {
+    padding: 5px 0px;
+}
+
+.side-navigation .profile-info .profile-picture {
+    padding: 10px 10px;
+}
+
+.side-navigation .profile-info .user-stats {
+    width: 120px;
+    padding: 10px 0px;
+    font-weight: 500;
+}
+
+.side-navigation .profile-info .user-stats p {
+    font-size: 20px;
+    margin: 10px 0px;
+    font-weight: 700;
+}
+
+.workout-container {
+    background-color: #FAFAFA;
+    margin-right: 20px;
+    padding: 0px;
+}
+
+.workout-inner {
+    padding: 10px;
+}
+
+.workout-inner .date {
+    font-size: 23px;
+}
+
+.workout-container .workout-social {
+    background-color: #48CFAD;
+    margin-top: 10px;
+}
+
+.content {
+    padding-top: 10px;
+}
