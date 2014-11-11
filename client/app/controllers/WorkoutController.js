@@ -27,13 +27,21 @@ fitnessApp.controller('WorkoutController', function ($scope) {
         likes: 0,
         comments: 0
     }, {
-        created_at: '23 jul',
+        created_at: '25 jul',
         exercises: 4,
         sets: 20,
         gym: max('Active Health Center Leidscheveen', 10),
         muscles_used: ['buikspieren', 'borst', 'rug'],
         likes: 23,
         comments: 4
+    }, {
+        created_at: '15 jul',
+        exercises: 3,
+        sets: 15,
+        gym: 'Fit4Free Zoetermeer',
+        muscles_used: ['borst', 'rug'],
+        likes: 3,
+        comments: 5
     }];
     console.log($scope.test);
 
