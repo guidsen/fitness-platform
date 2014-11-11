@@ -2,28 +2,42 @@
     <!--<button type="button" class="btn btn-info">Toevoegen <i class="fa fa-plus"></i></button>-->
 </div>
 <div class="row">
-    <div ng-repeat="workout in workouts" class="col-md-4 workout-container">
+    <div ng-repeat="workout in workouts" class="col-md-6 workout-container">
         <a href="#" class="workout-item">
             <div class="workout-inner">
                 <div class="col-md-2 date text-center">
                     23<br>jul
                 </div>
                 <div class="col-md-5 info">
-                    Oefeningen: 4 <br>
-                    <i class="fa fa-refresh"></i> 20 <br>
-                    <i class="fa fa-map-marker"></i> Fit for Free Den Haag
+                    <table>
+                        <tr>
+                            <td><i class="fa flaticon-dumbbell"></i></td>
+                            <td>{{workout.exercises}}</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-refresh"></i></td>
+                            <td>{{workout.sets}}</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-map-marker"></i></td>
+                            <td><div class="location">{{workout.gym}}</div></td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="col-md-5 musclegroups">
                     <div class="head"><i class="fa fa-bars"></i> Spieren beoefend:</div>
-                    Buikspieren, Borst, Rug
+                    {{workout.muscles_used}}
                 </div>
             </div>
             <div class="col-md-12 workout-social">
-                <i class="fa fa-thumbs-up"></i> 5 &nbsp; &nbsp; <i class="fa fa-comment"></i> 2
+                <i class="fa fa-thumbs-up"></i> {{workout.likes}} &nbsp; &nbsp; <i class="fa fa-comment"></i> {{workout.comments}}
             </div>
         </a>
+
         <div class="workout-overlay text-center">
-            <i class="fa fa-sign-in"></i>
+            <div class="workout-overlay-background">
+                <i class="fa fa-sign-in"></i>
+            </div>
         </div>
     </div>
 </div>
