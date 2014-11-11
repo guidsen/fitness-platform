@@ -118,7 +118,9 @@
     height: 100%;
     border-radius: 4px;
     cursor: pointer;
-    padding: 10px; }
+    padding: 10px;
+    color: #37BC9B;
+    font-size: 16px; }
     .workout-container .workout-overlay .workout-overlay-background {
       background: #e2e6e6;
       /* The Fallback */
@@ -135,8 +137,13 @@
       display: inline-block;
       vertical-align: middle;
       font-size: 38px;
-      color: #fff;
+      color: #37BC9B;
       margin-top: -28px; }
+    .workout-container .workout-overlay span {
+      font-weight: 600;
+      position: relative;
+      top: -12px;
+      padding-left: 5px; }
   .workout-container .workout-social {
     font-size: 13px;
     background-color: #e2e6e6;
@@ -168,6 +175,10 @@
 
 .content {
   padding-top: 10px; }
+  .content .btn-toolbar .btn {
+    font-size: 17px;
+    height: 30px;
+    padding: 6px 25px; }
 
 .no-margin {
   margin: 0 !important; }

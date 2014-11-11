@@ -28,8 +28,14 @@ $border_grey: #E7E7E7;
 
 .content {
   padding-top: 10px;
+
+  .btn-toolbar .btn {
+    font-size: 17px;
+    height: 30px;
+    padding: 6px 25px;
+  }
 }
 
 .no-margin {
-  margin: 0!important;
+  margin: 0 !important;
 }

@@ -80,6 +80,8 @@ $sub_color: #ABB7B7;
     border-radius: 4px;
     cursor: pointer;
     padding: 10px;
+    color: $main_color;
+    font-size: 16px;
 
     .workout-overlay-background {
       @include background-opacity(lighten($sub_color, 20), 0.5);
@@ -99,8 +101,15 @@ $sub_color: #ABB7B7;
       display: inline-block;
       vertical-align: middle;
       font-size: 38px;
-      color: #fff;
+      color: $main_color;
       margin-top: -28px;
+    }
+
+    span {
+      font-weight: 600;
+      position: relative;
+      top: -12px;
+      padding-left: 5px;
     }
   }
 
