@@ -8,8 +8,8 @@
 </div>
 <div class="row">
     <div ng-repeat="workout in workouts" class="col-md-6 workout-container">
-        <a href="#" class="workout-item">
-            <div class="workout-inner">
+        <div class="workout-inner">
+            <a href="#" class="workout-item">
                 <div class="col-md-2 date text-center">
                     23<br>jul
                 </div>
@@ -35,17 +35,22 @@
                     <div class="head"><i class="fa fa-bars"></i> Spieren beoefend:</div>
                     {{::workout.muscles_used}}
                 </div>
-            </div>
-            <div class="col-md-12 workout-social">
-                <i class="fa fa-heart"></i> {{workout.likes}} &nbsp; &nbsp; <i class="fa fa-comment"></i>
+                <div class="workout-overlay text-center">
+                    <div class="workout-overlay-background">
+                        <i class="fa fa-sign-in"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-12 workout-social">
+            <a href="#">
+                <i class="fa fa-heart"></i>
+                {{workout.likes}}
+            </a>
+            <a href="#">
+                <i class="fa fa-comment"></i>
                 {{workout.comments}}
-            </div>
-        </a>
-
-        <div class="workout-overlay text-center">
-            <div class="workout-overlay-background">
-                <i class="fa fa-sign-in"></i>
-            </div>
+            </a>
         </div>
     </div>
 </div>

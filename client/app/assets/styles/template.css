@@ -71,49 +71,27 @@
 
 .workout-container {
   padding: 10px; }
-  .workout-container .workout-item {
-    position: relative;
-    overflow: hidden;
-    background-color: #FAFAFA; }
-  .workout-container .workout-item:hover + .workout-overlay {
-    display: block;
-    pointer-events: none; }
-  .workout-container .workout-item:hover {
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    cursor: pointer; }
-  .workout-container .workout-social {
-    font-size: 13px;
-    background-color: #e2e6e6;
-    overflow: hidden;
-    color: #434a54;
-    padding: 5px 10px;
-    -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-left: 1px solid #E7E7E7;
-    border-right: 1px solid #E7E7E7; }
-    .workout-container .workout-social .fa {
-      color: #fff;
-      font-size: 16px;
-      padding: 0px 3px; }
-    .workout-container .workout-social .fa-heart {
-      color: #ff878d; }
-    .workout-container .workout-social .fa-comment {
-      color: #ABB7B7; }
   .workout-container .workout-inner {
+    display: block;
     overflow: hidden;
-    color: #434a54;
-    padding: 10px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-top: 1px solid #E0E0E0;
     border-left: 1px solid #E7E7E7;
     border-right: 1px solid #E7E7E7; }
+    .workout-container .workout-inner .workout-item {
+      background-color: #FAFAFA;
+      color: #434a54;
+      padding: 10px;
+      display: block;
+      overflow: hidden;
+      height: 100px; }
+      .workout-container .workout-inner .workout-item:hover {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        cursor: pointer; }
     .workout-container .workout-inner .date {
       font-size: 23px; }
     .workout-container .workout-inner .head {
@@ -128,6 +106,9 @@
       vertical-align: top;
       padding: 2px 0;
       font-size: 14px; }
+  .workout-container .workout-inner:hover .workout-overlay {
+    display: block;
+    pointer-events: none; }
   .workout-container .workout-overlay {
     display: none;
     position: absolute;
@@ -141,7 +122,7 @@
     .workout-container .workout-overlay .workout-overlay-background {
       background: #e2e6e6;
       /* The Fallback */
-      background: rgba(226, 230, 230, 0.8);
+      background: rgba(226, 230, 230, 0.5);
       height: 100%;
       width: 100%;
       border-radius: 4px; }
@@ -154,7 +135,33 @@
       display: inline-block;
       vertical-align: middle;
       font-size: 38px;
-      color: #fff; }
+      color: #fff;
+      margin-top: -28px; }
+  .workout-container .workout-social {
+    font-size: 13px;
+    background-color: #e2e6e6;
+    overflow: hidden;
+    padding: 5px 10px;
+    -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left: 1px solid #E7E7E7;
+    border-right: 1px solid #E7E7E7; }
+    .workout-container .workout-social a {
+      color: #434a54;
+      margin-right: 15px; }
+      .workout-container .workout-social a .fa {
+        color: #fff;
+        font-size: 16px;
+        padding: 0px 3px;
+        position: relative;
+        top: 1px; }
+      .workout-container .workout-social a .fa-heart {
+        color: #ff878d; }
+      .workout-container .workout-social a .fa-comment {
+        color: #ABB7B7; }
 
 .clear-float {
   clear: both; }
