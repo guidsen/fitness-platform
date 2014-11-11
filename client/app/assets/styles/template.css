@@ -107,7 +107,8 @@
       font-weight: 600; }
     .workout-container .workout-inner .info .fa {
       color: #2FA185;
-      width: 15px; }
+      width: 15px;
+      text-align: center; }
   .workout-container .workout-overlay {
     display: none;
     position: absolute;
