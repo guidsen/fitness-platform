@@ -8,7 +8,7 @@
 </div>
 <div class="row">
     <div ng-repeat="workout in workouts" class="col-md-6 workout-container">
-        <a href="#" class="workout-item">
+        <a ui-sref="workoutItem({id: workout.id})" class="workout-item">
             <div class="workout-inner">
                 <div class="col-md-2 date text-center">
                     23<br>jul

@@ -3,6 +3,7 @@ var fitnessApp = angular.module('fitnessApp')
 fitnessApp.controller('WorkoutController', function ($scope) {
 
     $scope.workouts = [{
+        id: 1,
         created_at: '23 jul',
         exercises: 4,
         sets: 20,
@@ -11,6 +12,7 @@ fitnessApp.controller('WorkoutController', function ($scope) {
         likes: 2,
         comments: 2
     }, {
+        id: 2,
         created_at: '21 jul',
         exercises: 3,
         sets: 9,
@@ -19,6 +21,7 @@ fitnessApp.controller('WorkoutController', function ($scope) {
         likes: 9,
         comments: 5
     }, {
+        id: 3,
         created_at: '27 aug',
         exercises: 2,
         sets: 14,
@@ -27,6 +30,7 @@ fitnessApp.controller('WorkoutController', function ($scope) {
         likes: 0,
         comments: 0
     }, {
+        id: 4,
         created_at: '25 jul',
         exercises: 4,
         sets: 20,
@@ -35,6 +39,7 @@ fitnessApp.controller('WorkoutController', function ($scope) {
         likes: 23,
         comments: 4
     }, {
+        id: 5,
         created_at: '15 jul',
         exercises: 3,
         sets: 15,
@@ -43,6 +48,52 @@ fitnessApp.controller('WorkoutController', function ($scope) {
         likes: 3,
         comments: 5
     }];
-    console.log($scope.test);
+
+    $scope.workout = {
+        created_at: '15 jul',
+        rest_between_sets: 30,
+        exercises: [{
+            title: 'Bench Press',
+            sets: [
+                {
+                    weight: 12,
+                    reps: 10
+                },
+                {
+                    weight: 16,
+                    reps: 10
+                },
+                {
+                    weight: 18,
+                    reps: 8
+                },
+                {
+                    weight: 22,
+                    reps: 6
+                }
+            ]
+        },
+            {
+                title: 'Hanging leg raise',
+                sets: [
+                    {
+                        weight: null,
+                        reps: 15
+                    },
+                    {
+                        weight: null,
+                        reps: 15
+                    },
+                    {
+                        weight: null,
+                        reps: 15
+                    },
+                    {
+                        weight: null,
+                        reps: 15
+                    }
+                ]
+            }]
+    }
 
 })

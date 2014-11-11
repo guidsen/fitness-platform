@@ -19,6 +19,11 @@ fitnessApp.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'views/workouts.html',
             controller: 'WorkoutController'
         })
+        .state('workoutItem', {
+            url: '/workout/:id',
+            templateUrl: 'views/workout.html',
+            controller: 'WorkoutController'
+        })
         .state('recipes', {
             url: '/recepten',
             templateUrl: 'views/recepten.html',
