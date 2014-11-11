@@ -1,5 +1,16 @@
 $sub_color: #ABB7B7;
 
+.workout-legend {
+  font-size: 13px;
+
+  .fa {
+    color: $main_color;
+    width: 15px;
+    text-align: center;
+    padding-top: 4px;
+  }
+}
+
 .workout-container {
   padding: 10px;
 
@@ -89,6 +100,7 @@ $sub_color: #ABB7B7;
       @include background-opacity(lighten($sub_color, 20), 0.8);
       height: 100%;
       width: 100%;
+      border-radius: 4px;
 
       &:before {
         content: '';

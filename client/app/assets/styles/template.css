@@ -61,6 +61,14 @@
   .top-navigation.navbar .navbar-nav > .open > a, .top-navigation.navbar .navbar-default .navbar-nav > .open > a:focus, .top-navigation.navbar .navbar-default .navbar-nav > .open > a:hover {
     background-color: #2b957a; }
 
+.workout-legend {
+  font-size: 13px; }
+  .workout-legend .fa {
+    color: #37BC9B;
+    width: 15px;
+    text-align: center;
+    padding-top: 4px; }
+
 .workout-container {
   padding: 10px; }
   .workout-container .workout-item {
@@ -129,7 +137,8 @@
       /* The Fallback */
       background: rgba(226, 230, 230, 0.8);
       height: 100%;
-      width: 100%; }
+      width: 100%;
+      border-radius: 4px; }
       .workout-container .workout-overlay .workout-overlay-background:before {
         content: '';
         display: inline-block;

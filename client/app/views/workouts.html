@@ -1,5 +1,9 @@
 <div class="row">
-    <!--<button type="button" class="btn btn-info">Toevoegen <i class="fa fa-plus"></i></button>-->
+    <div class="col-md-12 workout-legend">
+        <!--<button type="button" class="btn btn-info">Toevoegen <i class="fa fa-plus"></i></button>-->
+        <i class="fa flaticon-dumbbell"></i> Aantal oefeningen &nbsp;
+        <i class="fa fa-refresh"></i> Aantal sets
+    </div>
 </div>
 <div class="row">
     <div ng-repeat="workout in workouts" class="col-md-6 workout-container">
@@ -20,7 +24,9 @@
                         </tr>
                         <tr>
                             <td><i class="fa fa-map-marker"></i></td>
-                            <td><div class="location">{{workout.gym}}</div></td>
+                            <td>
+                                <div class="location">{{workout.gym}}</div>
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -30,7 +36,8 @@
                 </div>
             </div>
             <div class="col-md-12 workout-social">
-                <i class="fa fa-thumbs-up"></i> {{workout.likes}} &nbsp; &nbsp; <i class="fa fa-comment"></i> {{workout.comments}}
+                <i class="fa fa-thumbs-up"></i> {{workout.likes}} &nbsp; &nbsp; <i class="fa fa-comment"></i>
+                {{workout.comments}}
             </div>
         </a>
 
