@@ -1,3 +1,4 @@
-function max(input) {
-    return (input.length > 25) ? input.substr(0, 23) + '...' : input;
+function max(input, length) {
+    var length = length || 25;
+    return (input.length > length) ? input.substr(0, length - 2) + '..' : input;
 }

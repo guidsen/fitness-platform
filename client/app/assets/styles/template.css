@@ -1,39 +1,41 @@
-.side-navigation .nav-stacked > li + li {
-  margin: 0px; }
-.side-navigation .well {
-  padding: 10px 0px 0px 0px;
-  background-color: #f9f9f9;
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px; }
-.side-navigation .nav-header {
-  text-transform: uppercase;
-  padding: 10px 15px;
-  font-weight: bold;
-  color: #434A54; }
-.side-navigation .nav-pills > li > a {
-  border-radius: 0px;
-  color: #656D78; }
-.side-navigation .nav-pills > li i {
-  width: 20px;
-  color: #999DA3; }
-.side-navigation .nav-pills > li.active > a {
-  color: #434A54;
-  border-right: 5px solid #7fdac3;
-  background-color: inherit; }
-.side-navigation .nav-pills > li:not(.active) > a:hover {
-  border-right: 5px solid #a7e5d6;
-  background-color: inherit;
-  color: #434A54; }
-.side-navigation .username {
-  background-color: #CCD1D9;
-  height: 40px;
-  line-height: 30px;
-  padding: 5px 15px;
-  font-size: 20px;
-  font-weight: 600; }
-  .side-navigation .username .fa-cog {
-    padding: 5px 0px; }
+.side-navigation {
+  margin-left: -15px; }
+  .side-navigation .nav-stacked > li + li {
+    margin: 0px; }
+  .side-navigation .well {
+    padding: 10px 0px 0px 0px;
+    background-color: #f9f9f9;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px; }
+  .side-navigation .nav-header {
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #434A54; }
+  .side-navigation .nav-pills > li > a {
+    border-radius: 0px;
+    color: #656D78; }
+  .side-navigation .nav-pills > li i {
+    width: 20px;
+    color: #999DA3; }
+  .side-navigation .nav-pills > li.active > a {
+    color: #434A54;
+    border-right: 5px solid #7fdac3;
+    background-color: inherit; }
+  .side-navigation .nav-pills > li:not(.active) > a:hover {
+    border-right: 5px solid #a7e5d6;
+    background-color: inherit;
+    color: #434A54; }
+  .side-navigation .username {
+    background-color: #CCD1D9;
+    height: 40px;
+    line-height: 30px;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 600; }
+    .side-navigation .username .fa-cog {
+      padding: 5px 0px; }
 
 .side-navigation .profile-info .profile-picture {
   padding: 10px 10px; }
@@ -107,7 +109,8 @@
     .workout-container .workout-inner .info .fa {
       color: #37BC9B;
       width: 25px;
-      text-align: center; }
+      text-align: center;
+      padding-top: 4px; }
     .workout-container .workout-inner table td {
       vertical-align: top;
       padding: 2px 0; }

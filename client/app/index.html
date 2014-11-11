@@ -11,28 +11,27 @@
 <nav class="navbar navbar-default top-navigation">
     <div ng-include="'views/partials/_topmenu.html'"></div>
 </nav>
-<div class="row no-margin">
-    <div class="col-md-2 hidden-xs side-navigation">
-        <div class="well">
-            <div class="profile-info">
-                <div class="username">Guidsen <a ui-sref-active="active" ui-sref="profile"><i class="fa fa-cog pull-right"></i></a></div>
-                <div class="profile-picture pull-left"><img src="http://placehold.it/145x145&text=Profiel foto"></div>
-                <div class="user-stats pull-left text-center">Gewicht<p>67.5</p>Vet %<p>8.5</p></div>
-            </div>
-            <hr class="clear-float">
-            <ul class="nav nav-pills nav-stacked">
-                <li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-home"></i></span> Fitboard</a></li>
-                <li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-area-chart"></i> Progessie</a></li>
-                <li class="nav-header">Fitness</li>
-                <li ui-sref-active="active"><a ui-sref="goals"><i class="fa fa-flag-checkered"></i> Doelen</a></li>
-                <li ui-sref-active="active"><a ui-sref="workouts"><i class="fa flaticon-dumbbell"></i> Workouts</a></li>
-                <li ui-sref-active="active"><a ui-sref="recipes"><i class="fa fa-cutlery"></i> Recepten</a></li>
-                <li ui-sref-active="active"><a ui-sref="logbook"><i class="fa fa-folder-open"></i> Logboek</a></li>
-            </ul>
+<div class="col-md-2 hidden-xs side-navigation">
+    <div class="well">
+        <div class="profile-info">
+            <div class="username">Guidsen
+                <a ui-sref-active="active" ui-sref="profile"><i class="fa fa-cog pull-right"></i></a></div>
+            <div class="profile-picture pull-left"><img src="http://placehold.it/145x145&text=Profiel foto"></div>
+            <div class="user-stats pull-left text-center">Gewicht<p>67.5</p>Vet %<p>8.5</p></div>
         </div>
+        <hr class="clear-float">
+        <ul class="nav nav-pills nav-stacked">
+            <li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-home"></i></span> Fitboard</a></li>
+            <li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-area-chart"></i> Progessie</a></li>
+            <li class="nav-header">Fitness</li>
+            <li ui-sref-active="active"><a ui-sref="goals"><i class="fa fa-flag-checkered"></i> Doelen</a></li>
+            <li ui-sref-active="active"><a ui-sref="workouts"><i class="fa flaticon-dumbbell"></i> Workouts</a></li>
+            <li ui-sref-active="active"><a ui-sref="recipes"><i class="fa fa-cutlery"></i> Recepten</a></li>
+            <li ui-sref-active="active"><a ui-sref="logbook"><i class="fa fa-folder-open"></i> Logboek</a></li>
+        </ul>
     </div>
-    <div class="col-md-10 content" ui-view></div>
 </div>
+<div class="col-md-10 content" ui-view></div>
 
 <script src="//code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js" type="text/javascript"></script>
