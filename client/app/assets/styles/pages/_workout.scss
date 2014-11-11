@@ -50,6 +50,14 @@ $sub_color: #ABB7B7;
       font-size: 16px;
       padding: 0px 3px;
     }
+
+    .fa-heart {
+      color: lighten(#ff0814, 25);
+    }
+
+    .fa-comment {
+      color: $sub_color;
+    }
   }
 
   .workout-inner {
@@ -74,13 +82,15 @@ $sub_color: #ABB7B7;
       color: $main_color;
       width: 25px;
       text-align: center;
-      padding-top: 4px;
+      margin: 2px 5px 0px 0px;
+      font-size: 17px;
     }
 
     table {
       td {
         vertical-align: top;
         padding: 2px 0;
+        font-size: 14px;
       }
     }
   }

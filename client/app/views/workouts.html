@@ -2,7 +2,8 @@
     <div class="col-md-12 workout-legend">
         <!--<button type="button" class="btn btn-info">Toevoegen <i class="fa fa-plus"></i></button>-->
         <i class="fa flaticon-dumbbell"></i> Aantal oefeningen &nbsp;
-        <i class="fa fa-refresh"></i> Aantal sets
+        <i class="fa fa-refresh"></i> Aantal sets &nbsp;
+        <i class="fa fa-map-marker"></i> Sportschool
     </div>
 </div>
 <div class="row">
@@ -16,27 +17,27 @@
                     <table>
                         <tr>
                             <td><i class="fa flaticon-dumbbell"></i></td>
-                            <td>{{workout.exercises}}</td>
+                            <td>{{::workout.exercises}}</td>
                         </tr>
                         <tr>
                             <td><i class="fa fa-refresh"></i></td>
-                            <td>{{workout.sets}}</td>
+                            <td>{{::workout.sets}}</td>
                         </tr>
                         <tr>
                             <td><i class="fa fa-map-marker"></i></td>
                             <td>
-                                <div class="location">{{workout.gym}}</div>
+                                <div class="location">{{::workout.gym}}</div>
                             </td>
                         </tr>
                     </table>
                 </div>
                 <div class="col-md-5 musclegroups">
                     <div class="head"><i class="fa fa-bars"></i> Spieren beoefend:</div>
-                    {{workout.muscles_used}}
+                    {{::workout.muscles_used}}
                 </div>
             </div>
             <div class="col-md-12 workout-social">
-                <i class="fa fa-thumbs-up"></i> {{workout.likes}} &nbsp; &nbsp; <i class="fa fa-comment"></i>
+                <i class="fa fa-heart"></i> {{workout.likes}} &nbsp; &nbsp; <i class="fa fa-comment"></i>
                 {{workout.comments}}
             </div>
         </a>
