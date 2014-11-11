@@ -42,6 +42,19 @@ $sub_color: #ABB7B7;
 
     .date {
       font-size: 23px;
+
+      .calendar-text {
+        top: 6px;
+      }
+
+      .fa-stack {
+        left: 3px;
+      }
+
+      .month {
+        font-weight: 700;
+        font-size: 20px;
+      }
     }
 
     .head {
