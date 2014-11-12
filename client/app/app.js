@@ -19,7 +19,7 @@ fitnessApp.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'views/workouts.html',
             controller: 'WorkoutController'
         })
-        .state('workoutItem', {
+        .state('workout', {
             url: '/workout/:id',
             templateUrl: 'views/workout.html',
             controller: 'WorkoutController'
