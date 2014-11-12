@@ -1,16 +1,48 @@
-<div class="row">
-    <div class="col-md-6">
-        <div id="location-map"></div>
-    </div>
-    <div class="col-md-6">
-        <h2 id="location-members" style="width: 500px;">{{location.name}}</h2>
+<h2 id="location-members" style="width: 500px;">{{location.name}}</h2>
+<div id="info" class="jumbotron ">
+    <div class="jumbotron-header">
         <div class="row">
-            <div class="col-sm-2 profile" ng-repeat="member in members">
-                <img src="http://static.squarespace.com/static/523ce201e4b0cd883dbb8bbf/t/53bf2302e4b06e125c374401/1405035267633/profile-icon.png" />
-                <div class="profile-overlay text-center">
-                    <div class="profile-overlay-background">
-                        <span>{{member.name}}</span>
-                    </div>
+            <div class="col-sm-6">
+                <h4>Openingstijden</h4>
+                <hr />
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td width="35%">Maandag</td>
+                            <td>09:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Maandag</td>
+                            <td>09:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Maandag</td>
+                            <td>09:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Maandag</td>
+                            <td>09:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Maandag</td>
+                            <td>09:00 - 22:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-6">
+                <h4>{{location.address}}</h4>
+                <hr />
+                <div id="location-map"></div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron-contents">
+        <div class="profile" ng-repeat="member in members">
+            <img src="http://static.squarespace.com/static/523ce201e4b0cd883dbb8bbf/t/53bf2302e4b06e125c374401/1405035267633/profile-icon.png" />
+            <div class="profile-overlay text-center">
+                <div class="profile-overlay-background">
+                    <span>{{member.firstname}}</span>
                 </div>
             </div>
         </div>
