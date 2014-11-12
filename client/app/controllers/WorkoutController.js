@@ -54,6 +54,9 @@ fitnessApp.controller('WorkoutController', function ($scope) {
         rest_between_sets: 30,
         exercises: [{
             title: 'Bench Press',
+            tags: ['borst', 'kracht', 'stang'],
+            img_before: 'http://www.bodybuilding.com/exercises/exerciseImages/sequences/369/Male/m/369_1.jpg',
+            img_after: 'http://www.bodybuilding.com/exercises/exerciseImages/sequences/369/Male/m/369_2.jpg',
             sets: [
                 {
                     weight: 12,
@@ -75,6 +78,9 @@ fitnessApp.controller('WorkoutController', function ($scope) {
         },
             {
                 title: 'Hanging leg raise',
+                tags: ['buik', 'kracht', 'lichaam', 'isolatie'],
+                img_before: 'http://www.bodybuilding.com/exercises/exerciseImages/sequences/222/Male/m/222_1.jpg',
+                img_after: 'http://www.bodybuilding.com/exercises/exerciseImages/sequences/222/Male/m/222_2.jpg',
                 sets: [
                     {
                         weight: null,
