@@ -39,4 +39,9 @@ fitnessApp.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'views/profile.html',
             controller: 'ProfileController'
         })
+        .state('location', {
+            url: '/locatie',
+            templateUrl: 'views/location.html',
+            controller: 'LocationController'
+        })
 })
