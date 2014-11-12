@@ -181,18 +181,25 @@
   overflow: hidden; }
   .exercises .exercise .jumbotron .jumbotron-header {
     overflow: hidden;
-    background-color: #f0f2f2; }
+    background-color: #FAFAFA; }
 .exercises .exercise .number {
+  color: #fff;
   margin-top: 15px;
   border-radius: 25px;
   text-align: center;
   padding: 9px 0px;
   width: 50px;
   background-color: #37BC9B; }
+.exercises .exercise .video {
+  margin-top: 15px;
+  text-align: center;
+  width: 50px; }
+  .exercises .exercise .video a {
+    color: #000; }
 .exercises .exercise .info {
   float: left; }
   .exercises .exercise .info h2 {
-    margin: 27px 0px 10px; }
+    margin: 27px 0px 12px; }
   .exercises .exercise .info .label {
     margin: 2px 2px;
     letter-spacing: .5;
@@ -205,7 +212,7 @@
     margin-left: 2px;
     border-top-right-radius: 4px; }
   .exercises .exercise .photos img {
-    float: left;
+    float: right;
     width: calc(50% - 2px); }
 
 #location-map {

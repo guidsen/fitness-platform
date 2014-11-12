@@ -166,10 +166,11 @@ $sub_color: #ABB7B7;
       overflow: hidden;
       .jumbotron-header {
         overflow: hidden;
-        background-color: lighten($sub_color, 25);
+        background-color: #FAFAFA;
       }
     }
     .number {
+      color: #fff;
       margin-top: 15px;
       border-radius: 25px;
       text-align: center;
@@ -177,10 +178,18 @@ $sub_color: #ABB7B7;
       width: 50px;
       background-color: $main_color;
     }
+    .video {
+      margin-top: 15px;
+      text-align: center;
+      width: 50px;
+      a {
+        color: #000;
+      }
+    }
     .info {
       float: left;
       h2 {
-        margin: 27px 0px 10px;
+        margin: 27px 0px 12px;
       }
       .label {
         margin: 2px 2px;
@@ -199,7 +208,7 @@ $sub_color: #ABB7B7;
         border-top-right-radius: 4px;
       }
       img {
-        float: left;
+        float: right;
         width: calc(50% - 2px);
       }
     }
