@@ -30,10 +30,14 @@ $border_grey: #E7E7E7;
 .content {
   padding-top: 10px;
 
-  .btn-toolbar .btn {
-    font-size: 17px;
-    height: 30px;
-    padding: 6px 25px;
+  .btn-toolbar {
+    margin-bottom: 20px;
+
+    .btn {
+      font-size: 17px;
+      height: 30px;
+      padding: 6px 25px;
+    }
   }
 }
 

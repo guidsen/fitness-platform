@@ -177,62 +177,48 @@
       .workout-container .workout-social a .fa-comment {
         color: #ABB7B7; }
 
-#location-map {
-  width: 100%;
-  height: 343px;
-  background-color: green; }
-
-.profile {
-  height: 100px;
+.exercises .exercise .jumbotron {
   overflow: hidden; }
-  .profile img {
-    width: 100%; }
-  .profile .profile-overlay {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    color: #37BC9B;
-    font-size: 16px; }
-    .profile .profile-overlay .profile-overlay-background {
-      background: #e2e6e6;
-      /* The Fallback */
-      background: rgba(226, 230, 230, 0.8);
-      height: 100%;
-      width: 100%; }
-      .profile .profile-overlay .profile-overlay-background:before {
-        content: '';
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle; }
-    .profile .profile-overlay .fa {
-      display: inline-block;
-      vertical-align: middle;
-      font-size: 38px;
-      color: #37BC9B; }
-    .profile .profile-overlay span {
-      font-weight: 600;
-      position: relative;
-      padding-left: 5px; }
-  .profile:hover .profile-overlay {
-    display: block; }
-
-#location-members {
-  font-size: 30px;
-  margin: 0 0 10px; }
+  .exercises .exercise .jumbotron .jumbotron-header {
+    overflow: hidden;
+    background-color: #f0f2f2; }
+.exercises .exercise .number {
+  margin-top: 15px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 9px 0px;
+  width: 50px;
+  background-color: #37BC9B; }
+.exercises .exercise .info {
+  float: left; }
+  .exercises .exercise .info h2 {
+    margin: 27px 0px 10px; }
+  .exercises .exercise .info .label {
+    margin: 2px 2px;
+    letter-spacing: .5;
+    font-weight: 600;
+    background-color: #206d5a; }
+.exercises .exercise .photos {
+  text-align: right;
+  padding-right: 0px; }
+  .exercises .exercise .photos .after {
+    margin-left: 2px;
+    border-top-right-radius: 4px; }
+  .exercises .exercise .photos img {
+    float: left;
+    width: calc(50% - 2px); }
 
 .clear-float {
   clear: both; }
 
 .content {
   padding-top: 10px; }
-  .content .btn-toolbar .btn {
-    font-size: 17px;
-    height: 30px;
-    padding: 6px 25px; }
+  .content .btn-toolbar {
+    margin-bottom: 20px; }
+    .content .btn-toolbar .btn {
+      font-size: 17px;
+      height: 30px;
+      padding: 6px 25px; }
 
 .no-margin {
   margin: 0 !important; }

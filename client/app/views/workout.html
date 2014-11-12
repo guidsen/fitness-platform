@@ -12,4 +12,28 @@
     </div>
 </div>
 
-Oefeningen: {{workout.exercises}}
+<div class="exercises">
+    <div class="row exercise" ng-repeat="exercise in workout.exercises">
+        <div class="col-md-6">
+
+            <div class="jumbotron">
+                <div class="jumbotron-header">
+                    <div class="col-md-1">
+                        <h3 class="number">{{ $index+1 }}</h3>
+                    </div>
+                    <div class="info col-md-6">
+                        <h2>{{exercise.title}}</h2>
+                        <span class="label" ng-repeat="tag in exercise.tags">{{tag}}</span>
+                    </div>
+                    <div class="photos col-md-5">
+                        <img class="before" ng-src="{{exercise.img_before}}">
+                        <img class="after" ng-src="{{exercise.img_after}}">
+                    </div>
+                </div>
+                <div class="jumbotron-contents col-md-12">
+                    Sets etc
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
