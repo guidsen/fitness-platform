@@ -13,28 +13,37 @@
 </div>
 
 <div class="exercises">
-    <div class="row exercise" ng-repeat="exercise in workout.exercises">
-        <div class="col-md-6">
+    <div class="col-md-7">
+        <div class="row exercise" ng-repeat="exercise in workout.exercises">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <div class="jumbotron-header">
+                        <div class="col-md-1">
+                            <h3 class="number">{{ $index+1 }}</h3>
 
-            <div class="jumbotron">
-                <div class="jumbotron-header">
-                    <div class="col-md-1">
-                        <h3 class="number">{{ $index+1 }}</h3>
-                        <h3 class="video"><a href="#"><i class="fa fa-video-camera"></i></a></h3>
+                            <h3 class="video"><a href="#"><i class="fa fa-video-camera"></i></a></h3>
+                        </div>
+                        <div class="info col-md-6">
+                            <h2>{{exercise.title}}</h2>
+                            <span class="label" ng-repeat="tag in exercise.tags">{{tag}}</span>
+                        </div>
+                        <div class="photos col-md-5">
+                            <img class="before" ng-src="{{exercise.img_before}}">
+                            <img class="after" ng-src="{{exercise.img_after}}">
+                        </div>
                     </div>
-                    <div class="info col-md-6">
-                        <h2>{{exercise.title}}</h2>
-                        <span class="label" ng-repeat="tag in exercise.tags">{{tag}}</span>
+                    <div class="jumbotron-contents col-md-12">
+                        Sets etc
+
+                        <!--<div class="BBCOMVideoEmbed" data-video-id="104000/104902" data-thumbnail-url="http://videos.bodybuilding.com/thumb/104000/104902.jpg" data-dimensions="320x257"><embed src="http://videos.bodybuilding.com/player.swf" wmode="transparent" width="320" height="257" allowscriptaccess="always" allowfullscreen="true" flashvars="height=257&amp;width=320&amp;file=http://videocdn.bodybuilding.com/video/mp4/104000/104902m.mp4&amp;image=http://videos.bodybuilding.com/thumb/104000/104902.jpg&amp;displayheight=257&amp;searchbar=false" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></div>-->
                     </div>
-                    <div class="photos col-md-5">
-                        <img class="before" ng-src="{{exercise.img_before}}">
-                        <img class="after" ng-src="{{exercise.img_after}}">
-                    </div>
-                </div>
-                <div class="jumbotron-contents col-md-12">
-                    Sets etc
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <div class="well">
+            <h3>Workout naam</h3>
         </div>
     </div>
 </div>

@@ -162,6 +162,9 @@ $sub_color: #ABB7B7;
 
 .exercises {
   .exercise {
+    > .col-md-12 {
+      padding-left: 0px;
+    }
     .jumbotron {
       overflow: hidden;
       .jumbotron-header {
