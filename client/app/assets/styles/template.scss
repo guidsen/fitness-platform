@@ -44,3 +44,7 @@ $border_grey: #E7E7E7;
 .no-margin {
   margin: 0 !important;
 }
+
+hr {
+  border-bottom: 1px solid $main_color;
+}

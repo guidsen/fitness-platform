@@ -210,50 +210,54 @@
 
 #location-map {
   width: 100%;
-  height: 343px;
+  height: 250px;
   background-color: green; }
 
-.profile {
-  height: 100px;
+#info .jumbotron-header {
+  background-color: #f0f2f2;
+  padding: 15px 15px 25px 15px; }
+#info .jumbotron-contents {
   overflow: hidden; }
-  .profile img {
+#info .profile {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  float: left;
+  margin-right: 10px;
+  border-radius: 4px; }
+  #info .profile img {
     width: 100%; }
-  .profile .profile-overlay {
+  #info .profile .profile-overlay {
     display: none;
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    cursor: pointer;
     color: #37BC9B;
-    font-size: 16px; }
-    .profile .profile-overlay .profile-overlay-background {
+    font-size: 16px;
+    margin-top: -100px; }
+    #info .profile .profile-overlay .profile-overlay-background {
       background: #e2e6e6;
       /* The Fallback */
       background: rgba(226, 230, 230, 0.8);
       height: 100%;
       width: 100%; }
-      .profile .profile-overlay .profile-overlay-background:before {
+      #info .profile .profile-overlay .profile-overlay-background:before {
         content: '';
         display: inline-block;
         height: 100%;
         vertical-align: middle; }
-    .profile .profile-overlay .fa {
+    #info .profile .profile-overlay .fa {
       display: inline-block;
       vertical-align: middle;
       font-size: 38px;
       color: #37BC9B; }
-    .profile .profile-overlay span {
+    #info .profile .profile-overlay span {
       font-weight: 600;
       position: relative;
       padding-left: 5px; }
-  .profile:hover .profile-overlay {
+  #info .profile:hover .profile-overlay {
     display: block; }
-
-#location-members {
-  font-size: 30px;
-  margin: 0 0 10px; }
 
 .clear-float {
   clear: both; }
@@ -269,5 +273,8 @@
 
 .no-margin {
   margin: 0 !important; }
+
+hr {
+  border-bottom: 1px solid #37BC9B; }
 
 /*# sourceMappingURL=template.css.map */

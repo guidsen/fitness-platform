@@ -7,34 +7,35 @@ fitnessApp.controller('LocationController', function ($scope) {
         position: {
             x: 5,
             y: 2
-        }
+        },
+        address: "Eikendreef 10, 2631 JG Nootdorp"
     }
 
     $scope.members = [
         {
             id: 1,
-            name: "Liam Hubers"
+            firstname: "Liam"
         }, {
             id: 2,
-            name: "Guido Schmitz"
+            firstname: "Guido"
         }, {
             id: 3,
-            name: "Steve de Waal"
+            firstname: "Steve"
         }, {
             id: 4,
-            name: "Dan Bilzerian"
+            firstname: "Dan"
         }, {
             id: 5,
-            name: "Frank de Boer"
+            firstname: "Frank"
         }, {
             id: 6,
-            name: "Barrack Obama"
+            firstname: "Barrack"
         }, {
             id: 7,
-            name: "Geert Wilders"
+            firstname: "Geert"
         }, {
             id: 8,
-            name: "Marco Borsato"
+            firstname: "Marco"
         }
     ];
 
