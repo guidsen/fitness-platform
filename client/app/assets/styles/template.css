@@ -94,6 +94,13 @@
         cursor: pointer; }
     .workout-container .workout-inner .date {
       font-size: 23px; }
+      .workout-container .workout-inner .date .calendar-text {
+        top: 6px; }
+      .workout-container .workout-inner .date .fa-stack {
+        left: 3px; }
+      .workout-container .workout-inner .date .month {
+        font-weight: 700;
+        font-size: 20px; }
     .workout-container .workout-inner .head {
       font-weight: 600; }
     .workout-container .workout-inner .info .fa {
