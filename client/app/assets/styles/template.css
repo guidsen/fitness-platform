@@ -184,6 +184,28 @@
   .exercises .exercise .jumbotron .jumbotron-header {
     overflow: hidden;
     background-color: #FAFAFA; }
+  .exercises .exercise .jumbotron .sets {
+    border-top: 2px solid #37BC9B; }
+  .exercises .exercise .jumbotron .sets > div {
+    border-right: 1px solid #ABB7B7; }
+  .exercises .exercise .jumbotron .sets div {
+    background-color: #e2e6e6;
+    float: left;
+    font-size: 30px; }
+    .exercises .exercise .jumbotron .sets div .reps, .exercises .exercise .jumbotron .sets div .weight {
+      padding: 5px 0px;
+      width: 40%;
+      text-align: center; }
+      .exercises .exercise .jumbotron .sets div .reps small, .exercises .exercise .jumbotron .sets div .weight small {
+        font-size: 16px;
+        color: #37BC9B;
+        font-weight: 700;
+        text-transform: uppercase; }
+    .exercises .exercise .jumbotron .sets div .multiplier {
+      width: 20%;
+      text-align: center;
+      padding-top: 11px;
+      font-size: 20px; }
 .exercises .exercise .number {
   color: #fff;
   margin-top: 15px;
@@ -216,6 +238,18 @@
   .exercises .exercise .photos img {
     float: right;
     width: calc(50% - 2px); }
+.exercises .info .well {
+  padding: 0px; }
+.exercises .info .header {
+  padding: 10px;
+  background-color: #f0f2f2; }
+  .exercises .info .header h3 {
+    margin: 0; }
+  .exercises .info .header small {
+    font-size: 13px;
+    color: #000; }
+.exercises .info .text {
+  padding: 10px; }
 
 #location-map {
   width: 100%;

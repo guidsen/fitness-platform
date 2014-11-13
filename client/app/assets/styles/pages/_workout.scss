@@ -171,6 +171,34 @@ $sub_color: #ABB7B7;
         overflow: hidden;
         background-color: #FAFAFA;
       }
+      .sets {
+        border-top: 2px solid $main_color;
+      }
+      .sets > div {
+        border-right: 1px solid $sub_color;
+      }
+      .sets div {
+        background-color: lighten($sub_color, 20);
+        float: left;
+        font-size: 30px;
+        .reps, .weight {
+          padding: 5px 0px;
+          width: 40%;
+          text-align: center;
+          small {
+            font-size: 16px;
+            color: $main_color;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+        }
+        .multiplier {
+          width: 20%;
+          text-align: center;
+          padding-top: 11px;
+          font-size: 20px;
+        }
+      }
     }
     .number {
       color: #fff;
@@ -214,6 +242,27 @@ $sub_color: #ABB7B7;
         float: right;
         width: calc(50% - 2px);
       }
+    }
+  }
+
+  .info {
+    .well {
+      padding: 0px;
+    }
+    .header {
+      padding: 10px;
+      //      height: 50px;
+      background-color: lighten($sub_color, 25);
+      h3 {
+        margin: 0;
+      }
+      small {
+        font-size: 13px;
+        color: #000;
+      }
+    }
+    .text {
+      padding: 10px;
     }
   }
 }
