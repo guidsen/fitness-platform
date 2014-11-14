@@ -1,4 +1,4 @@
-<h2 id="location-members" style="width: 500px;">{{location.name}}</h2>
+<h2 id="location-members" style="width: 500px;">{{::location.name}}</h2>
 <div id="info" class="jumbotron ">
     <div class="jumbotron-header">
         <div class="row">
@@ -31,7 +31,7 @@
                 </table>
             </div>
             <div class="col-sm-6">
-                <h4>{{location.address}}</h4>
+                <h4>{{::location.address}}</h4>
                 <hr />
                 <div id="location-map"></div>
             </div>
@@ -42,7 +42,7 @@
             <img src="http://static.squarespace.com/static/523ce201e4b0cd883dbb8bbf/t/53bf2302e4b06e125c374401/1405035267633/profile-icon.png" />
             <div class="profile-overlay text-center">
                 <div class="profile-overlay-background">
-                    <span>{{member.firstname}}</span>
+                    <span>{{::member.firstname}}</span>
                 </div>
             </div>
         </div>

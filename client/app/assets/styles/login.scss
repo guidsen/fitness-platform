@@ -1,0 +1,36 @@
+$main_color: #37BC9B;
+
+body{
+  background-color: $main_color;
+  height: 100%;
+  text-align: center;
+
+  #login {
+    width: 300px;
+    margin: auto;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+
+    i{
+      font-size: 156px;
+      color: lighten($main_color, 10);
+    }
+
+    button {
+      width: 100%;
+
+      &:hover, &:active, &:focus {
+        background-color: #fff;
+        color: #333;
+      }
+    }
+  }
+
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
