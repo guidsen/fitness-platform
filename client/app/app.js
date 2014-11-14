@@ -14,6 +14,11 @@ fitnessApp.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'views/goals.html',
             controller: 'GoalController'
         })
+        .state('progression', {
+            url: '/propgressie',
+            templateUrl: 'views/progression.html',
+            controller: 'ProgressionController'
+        })
         .state('workouts', {
             url: '/workouts',
             templateUrl: 'views/workouts.html',
@@ -31,7 +36,7 @@ fitnessApp.config(function ($stateProvider, $urlRouterProvider) {
         })
         .state('logbook', {
             url: '/logboek',
-            templateUrl: 'views/logboek.html',
+            templateUrl: 'views/logbook.html',
             controller: 'LogbookController'
         })
         .state('profile', {

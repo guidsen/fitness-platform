@@ -14,31 +14,28 @@ fitnessApp.controller('LocationController', function ($scope) {
     $scope.members = [
         {
             id: 1,
-            firstname: "Liam"
+            firstName: "Liam"
         }, {
             id: 2,
-            firstname: "Guido"
+            firstName: "Guido"
         }, {
             id: 3,
-            firstname: "Steve"
+            firstName: "Steve"
         }, {
             id: 4,
-            firstname: "Dan"
+            firstName: "Dan"
         }, {
             id: 5,
-            firstname: "Frank"
+            firstName: "Frank"
         }, {
             id: 6,
-            firstname: "Barrack"
+            firstName: "Barrack"
         }, {
             id: 7,
-            firstname: "Geert"
+            firstName: "Geert"
         }, {
             id: 8,
-            firstname: "Marco"
+            firstName: "Marco"
         }
     ];
-
-    console.log($scope.members);
-
 })
