@@ -19,8 +19,16 @@
     li {
       > a {
         padding: 12px 20px;
+        -webkit-transition:background-color $delay, color $delay;
+        -moz-transition:background-color $delay, color $delay;
+        -o-transition:background-color $delay, color $delay;
+        transition:background-color $delay, color $delay;
       }
       font-size: 25px;
+
+      &:not(.active):hover a{
+        color: lighten($main_color, 40)!important;
+      }
     }
   }
 }

@@ -64,7 +64,13 @@
 .top-navigation .nav li {
   font-size: 25px; }
   .top-navigation .nav li > a {
-    padding: 12px 20px; }
+    padding: 12px 20px;
+    -webkit-transition: background-color 0.15s, color 0.15s;
+    -moz-transition: background-color 0.15s, color 0.15s;
+    -o-transition: background-color 0.15s, color 0.15s;
+    transition: background-color 0.15s, color 0.15s; }
+  .top-navigation .nav li:not(.active):hover a {
+    color: #cef1e8 !important; }
 
 .workout-legend {
   font-size: 13px; }
@@ -328,37 +334,19 @@ hr {
 .ui-view-container {
   position: relative; }
 
-[ui-view].ng-enter, [ui-view].ng-leave {
+[ui-view].ng-enter {
   position: absolute;
   left: 15px;
   right: 15px;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out; }
+  -webkit-transition: opacity 0.15s;
+  -moz-transition: opacity 0.15s;
+  -o-transition: opacity 0.15s;
+  transition: opacity 0.15s; }
 
-[ui-view].ng-enter {
-  opacity: 0;
-  -webkit-transform: scale3d(0.5, 0.5, 0.5);
-  -moz-transform: scale3d(0.5, 0.5, 0.5);
-  transform: scale3d(0.5, 0.5, 0.5); }
+[ui-view].ng-enter, [ui-view].ng-leave-active {
+  opacity: 0; }
 
-[ui-view].ng-enter-active {
-  opacity: 1;
-  -webkit-transform: scale3d(1, 1, 1);
-  -moz-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1); }
-
-[ui-view].ng-leave {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-
-[ui-view].ng-leave-active {
-  opacity: 0;
-  -webkit-transform: translate3d(100px, 0, 0);
-  -moz-transform: translate3d(100px, 0, 0);
-  transform: translate3d(100px, 0, 0); }
+[ui-view].ng-enter-active, [ui-view].ng-leave {
+  opacity: 1; }
 
 /*# sourceMappingURL=template.css.map */
