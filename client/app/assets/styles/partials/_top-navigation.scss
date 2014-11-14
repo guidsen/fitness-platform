@@ -1,3 +1,5 @@
+$triangle_size: 6px;
+
 .top-navigation.navbar {
   background-color: $main_color;
   border: 0px;
@@ -5,8 +7,14 @@
   border-radius: 0px;
   margin-bottom: 0px;
 
-  .navbar-nav > .active > a {
-    background-color: darken($main_color, 5);
+  .navbar-nav > .active {
+    .triangle{
+      opacity: 1;
+    }
+
+    > a {
+      background-color: darken($main_color, 5);
+    }
   }
 
   .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
@@ -23,6 +31,23 @@
         -moz-transition:background-color $delay, color $delay;
         -o-transition:background-color $delay, color $delay;
         transition:background-color $delay, color $delay;
+        text-align: center;
+
+        .triangle{
+          opacity: 0;
+          width: 0;
+          height: 0;
+          border-left: $triangle_size solid transparent;
+          border-right: $triangle_size solid transparent;
+          border-bottom: $triangle_size solid darken($main_color, 10);
+          position: absolute;
+          top: 43px;
+          margin-left: 5px;
+          -webkit-transition:opacity $delay;
+          -moz-transition:opacity $delay;
+          -o-transition:opacity $delay;
+          transition:opacity $delay;
+        }
       }
       font-size: 25px;
 
