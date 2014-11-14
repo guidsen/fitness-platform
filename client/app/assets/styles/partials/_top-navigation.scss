@@ -13,3 +13,14 @@
     background-color: darken($main_color, 10);
   }
 }
+
+.top-navigation {
+  .nav {
+    li {
+      > a {
+        padding: 12px 20px;
+      }
+      font-size: 25px;
+    }
+  }
+}

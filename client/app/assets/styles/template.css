@@ -61,6 +61,11 @@
   .top-navigation.navbar .navbar-nav > .open > a, .top-navigation.navbar .navbar-default .navbar-nav > .open > a:focus, .top-navigation.navbar .navbar-default .navbar-nav > .open > a:hover {
     background-color: #2b957a; }
 
+.top-navigation .nav li {
+  font-size: 25px; }
+  .top-navigation .nav li > a {
+    padding: 12px 20px; }
+
 .workout-legend {
   font-size: 13px; }
   .workout-legend .fa {
@@ -185,13 +190,13 @@
     overflow: hidden;
     background-color: #FAFAFA; }
   .exercises .exercise .jumbotron .sets {
-    border-top: 2px solid #37BC9B; }
+    border-top: 2px solid #37BC9B;
+    font-size: 30px;
+    background-color: #e2e6e6; }
   .exercises .exercise .jumbotron .sets > div {
     border-right: 1px solid #ABB7B7; }
   .exercises .exercise .jumbotron .sets div {
-    background-color: #e2e6e6;
-    float: left;
-    font-size: 30px; }
+    float: left; }
     .exercises .exercise .jumbotron .sets div .reps, .exercises .exercise .jumbotron .sets div .weight {
       padding: 5px 0px;
       width: 40%;

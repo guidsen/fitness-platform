@@ -19,17 +19,25 @@
             <div class="profile-picture pull-left"><img src="http://placehold.it/145x145&text=Profiel foto"></div>
             <div class="user-stats pull-left text-center">Gewicht<p>67.5</p>Vet %<p>8.5</p></div>
         </div>
-        <hr class="clear-float">
-        <ul class="nav nav-pills nav-stacked">
-            <li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-home"></i></span> Fitboard</a></li>
-            <li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-area-chart"></i> Progessie</a></li>
-            <li class="nav-header">Fitness</li>
-            <li ui-sref-active="active"><a ui-sref="goals"><i class="fa fa-flag-checkered"></i> Doelen</a></li>
-            <li ui-sref-active="active"><a ui-sref="workouts"><i class="fa flaticon-dumbbell"></i> Workouts</a></li>
-            <li ui-sref-active="active"><a ui-sref="recipes"><i class="fa fa-cutlery"></i> Recepten</a></li>
-            <li ui-sref-active="active"><a ui-sref="logbook"><i class="fa fa-folder-open"></i> Logboek</a></li>
-            <li ui-sref-active="active"><a ui-sref="location"><i class="fa fa-folder-open"></i> Location (test)</a></li>
-        </ul>
+        <div class="clear-float"></div>
+        <!--<ul class="nav nav-pills nav-stacked">-->
+            <!--&lt;!&ndash;<li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-home"></i></span> Fitboard</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-area-chart"></i> Progessie</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li class="nav-header">Fitness</li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li ui-sref-active="active"><a ui-sref="goals"><i class="fa fa-flag-checkered"></i> Doelen</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li ui-sref-active="active"><a ui-sref="workouts"><i class="fa flaticon-dumbbell"></i> Workouts</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li ui-sref-active="active"><a ui-sref="recipes"><i class="fa fa-cutlery"></i> Recepten</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li ui-sref-active="active"><a ui-sref="logbook"><i class="fa fa-folder-open"></i> Logboek</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li ui-sref-active="active"><a ui-sref="location"><i class="fa fa-folder-open"></i> Location (test)</a></li>&ndash;&gt;-->
+        <!--</ul>-->
+        <div class="panel panel-default">
+            <div class="panel-heading">Laatste workouts</div>
+            <ul class="list-group">
+                <li class="list-group-item"><a ui-sref="workout({id:1})">Workout #1</a></li>
+                <li class="list-group-item"><a ui-sref="workout({id:1})">Workout #1</a></li>
+                <li class="list-group-item"><a ui-sref="workout({id:1})">Workout #1</a></li>
+            </ul>
+        </div>
     </div>
 </div>
 <div class="col-md-10 content" ui-view></div>

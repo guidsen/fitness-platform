@@ -173,14 +173,14 @@ $sub_color: #ABB7B7;
       }
       .sets {
         border-top: 2px solid $main_color;
+        font-size: 30px;
+        background-color: lighten($sub_color, 20);
       }
       .sets > div {
         border-right: 1px solid $sub_color;
       }
       .sets div {
-        background-color: lighten($sub_color, 20);
         float: left;
-        font-size: 30px;
         .reps, .weight {
           padding: 5px 0px;
           width: 40%;
