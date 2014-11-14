@@ -1,4 +1,4 @@
-var fitnessApp = angular.module('fitnessApp', ['ui.router']);
+var fitnessApp = angular.module('fitnessApp', ['ui.router', 'ngAnimate']);
 
 fitnessApp.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/home');
