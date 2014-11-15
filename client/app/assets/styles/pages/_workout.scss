@@ -24,6 +24,7 @@ $sub_color: #ABB7B7;
     border-right: 1px solid $border_grey;
 
     .workout-item {
+      float: left;
       background-color: #FAFAFA;
       color: #434a54;
       padding: 10px;
@@ -37,6 +38,30 @@ $sub_color: #ABB7B7;
         -moz-user-select: none;
         -ms-user-select: none;
         cursor: pointer;
+      }
+    }
+
+    .workout-link {
+      padding: 0;
+      height: 100px;
+      font-size: 25px;
+      background-color: darken(#FAFAFA, 2);
+
+      &:hover {
+        background-color: darken(#FAFAFA, 3);
+      }
+
+      a {
+        color: $main_color;
+        &:hover {
+          color: darken($main_color, 10);
+        }
+      }
+
+      i {
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
       }
     }
 
