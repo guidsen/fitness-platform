@@ -15,16 +15,17 @@
   background: rgba($color, $opacity);
 }
 
-@mixin transition($input) {
-  transition: $input;
-  -moz-transition: $input;
-  -o-transition: $input;
-  -webkit-transition: $input;
+@mixin transition($input...) {
+  transition: $input $delay;
+  -moz-transition: $input $delay;
+  -o-transition: $input $delay;
+  -webkit-transition: $input $delay;
 }
 
 $main_color: #37BC9B;
 $border_grey: #E7E7E7;
-$delay: 0.15s;
+$delay: .5s;
+
 
 @import "partials/_side-navigation";
 @import "partials/_top-navigation";
@@ -78,10 +79,7 @@ hr {
   position: absolute;
   left: 15px;
   right: 15px;
-  -webkit-transition:opacity $delay;
-  -moz-transition:opacity $delay;
-  -o-transition:opacity $delay;
-  transition:opacity $delay;
+  @include transition(opacity);
 }
 
 [ui-view].ng-enter, [ui-view].ng-leave-active {
@@ -90,4 +88,15 @@ hr {
 
 [ui-view].ng-enter-active, [ui-view].ng-leave {
   opacity: 1;
+}
+
+.col-md-0{
+  margin-left: -16.66666667%;
+}
+
+.content {
+  @include transition(width);
+}
+
+.content.col-md-10 {
 }

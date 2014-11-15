@@ -12,8 +12,8 @@
 <nav class="navbar navbar-default top-navigation">
     <div ng-include="'views/partials/_topmenu.html'"></div>
 </nav>
-<div class="col-md-2 hidden-xs side-navigation">
-    <div ng-show="showProfile" class="well">
+<div ng-class="{open: showProfile}" class="col-md-2 hidden-xs side-navigation">
+    <div class="well">
         {{ showProfile }}
         <div class="profile-info">
             <div class="username">Guidsen
@@ -32,7 +32,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-8 content">
+<div ng-class="{'col-md-8': showProfile, 'col-md-10': !showProfile}" class="content">
     <div ui-view></div>
 </div>
 

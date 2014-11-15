@@ -1,5 +1,6 @@
 .side-navigation {
   margin-left: -15px;
+  @include transition(margin-left);
 
   .nav-stacked > li + li {
     margin: 0px;
@@ -83,4 +84,8 @@
   font-size: 20px;
   margin: 10px 0px;
   font-weight: 700;
+}
+
+.side-navigation:not(.open) {
+  margin-left: -16.6666667%;
 }
