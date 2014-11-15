@@ -7,10 +7,24 @@ $triangle_size: 6px;
   border-radius: 0px;
   margin-bottom: 0px;
 
+  .hide-profile {
+    @include transition(margin-left);
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: lighten($main_color, 40);
+
+    &.right {
+      margin-left: calc(100% - 29px);
+    }
+
+    &.left {
+      margin-left: 10px;
+    }
+  }
+
   .row .col-md-2 {
     .hide-profile i {
-      cursor: pointer;
-      padding: 0px 10px;
       font-size: 20px;
       line-height: 48px;
     }
@@ -39,19 +53,6 @@ $triangle_size: 6px;
         padding: 12px 20px;
         @include transition(background-color, color);
         text-align: center;
-
-        .triangle {
-          opacity: 0;
-          width: 0;
-          height: 0;
-          border-left: $triangle_size solid transparent;
-          border-right: $triangle_size solid transparent;
-          border-bottom: $triangle_size solid darken($main_color, 10);
-          position: absolute;
-          top: 43px;
-          margin-left: 5px;
-          @include transition(opacity);
-        }
       }
       font-size: 25px;
 
