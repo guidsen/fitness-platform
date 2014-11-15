@@ -1,0 +1,51 @@
+<div class="col-md-6 workout-container">
+    <div class="workout-inner">
+        <a ui-sref="workout({id: workout.id})" class="workout-item">
+            <div class="col-md-2 date text-center">
+                    <span class="fa-stack fa-1x">
+                        <i class="fa fa-calendar-o fa-stack-2x"></i>
+                        <strong class="fa-stack-1x calendar-text">27</strong>
+                    </span>
+                <br/>
+                <span class="month">Jul</span>
+            </div>
+            <div class="col-md-5 info">
+                <table>
+                    <tr>
+                        <td><i class="fa flaticon-dumbbell"></i></td>
+                        <td>{{::workout.exercises}}</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-refresh"></i></td>
+                        <td>{{::workout.sets}}</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-clock-o"></i></td>
+                        <td>
+                            <div class="location">{{::workout.gym}}</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-5 musclegroups">
+                <div class="head"><i class="fa fa-bars"></i> Spieren beoefend:</div>
+                {{::workout.muscles_used}}
+            </div>
+            <div class="workout-overlay text-center">
+                <div class="workout-overlay-background">
+                    <i class="fa fa-sign-in"></i> <span>Bekijken</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-12 workout-social">
+        <a href="#">
+            <i class="fa fa-heart"></i>
+            {{workout.likes}}
+        </a>
+        <a href="#">
+            <i class="fa fa-comment"></i>
+            {{workout.comments}}
+        </a>
+    </div>
+</div>

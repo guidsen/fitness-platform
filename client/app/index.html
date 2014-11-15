@@ -1,18 +1,20 @@
 <html>
 <head>
     <title>Fitness platform</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/libs/bootflat/bootflat.min.css">
     <link rel="stylesheet" href="assets/libs/flaticons/flaticon.css">
     <link rel="stylesheet" href="assets/styles/template.css">
 </head>
-<body ng-app="fitnessApp">
+<body ng-app="fitnessApp" ng-init="showProfile = true">
 <nav class="navbar navbar-default top-navigation">
     <div ng-include="'views/partials/_topmenu.html'"></div>
 </nav>
 <div class="col-md-2 hidden-xs side-navigation">
-    <div class="well">
+    <div ng-show="showProfile" class="well">
+        {{ showProfile }}
         <div class="profile-info">
             <div class="username">Guidsen
                 <a ui-sref-active="active" ui-sref="profile"><i class="fa fa-cog pull-right"></i></a></div>
@@ -20,16 +22,6 @@
             <div class="user-stats pull-left text-center">Gewicht<p>67.5</p>Vet %<p>8.5</p></div>
         </div>
         <div class="clear-float"></div>
-        <!--<ul class="nav nav-pills nav-stacked">-->
-            <!--&lt;!&ndash;<li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-home"></i></span> Fitboard</a></li>&ndash;&gt;-->
-            <!--&lt;!&ndash;<li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-area-chart"></i> Progessie</a></li>&ndash;&gt;-->
-            <!--&lt;!&ndash;<li class="nav-header">Fitness</li>&ndash;&gt;-->
-            <!--&lt;!&ndash;<li ui-sref-active="active"><a ui-sref="goals"><i class="fa fa-flag-checkered"></i> Doelen</a></li>&ndash;&gt;-->
-            <!--&lt;!&ndash;<li ui-sref-active="active"><a ui-sref="workouts"><i class="fa flaticon-dumbbell"></i> Workouts</a></li>&ndash;&gt;-->
-            <!--&lt;!&ndash;<li ui-sref-active="active"><a ui-sref="recipes"><i class="fa fa-cutlery"></i> Recepten</a></li>&ndash;&gt;-->
-            <!--&lt;!&ndash;<li ui-sref-active="active"><a ui-sref="logbook"><i class="fa fa-folder-open"></i> Logboek</a></li>&ndash;&gt;-->
-            <!--&lt;!&ndash;<li ui-sref-active="active"><a ui-sref="location"><i class="fa fa-folder-open"></i> Location (test)</a></li>&ndash;&gt;-->
-        <!--</ul>-->
         <div class="panel panel-default">
             <div class="panel-heading">Laatste workouts</div>
             <ul class="list-group">
@@ -40,7 +32,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-10 content">
+<div class="col-md-8 content">
     <div ui-view></div>
 </div>
 
@@ -51,6 +43,7 @@
 <script src="assets/libs/ui-router/angular-ui-router.min.js" type="text/javascript"></script>
 <script src="app.js" type="text/javascript"></script>
 <script src="functions.js" type="text/javascript"></script>
+<script src="directives.js" type="text/javascript"></script>
 <script src="controllers/HomeController.js" type="text/javascript"></script>
 <script src="controllers/GoalController.js" type="text/javascript"></script>
 <script src="controllers/LogbookController.js" type="text/javascript"></script>
@@ -58,5 +51,6 @@
 <script src="controllers/WorkoutController.js" type="text/javascript"></script>
 <script src="controllers/ProfileController.js" type="text/javascript"></script>
 <script src="controllers/LocationController.js" type="text/javascript"></script>
+<script src="controllers/ProgressionController.js" type="text/javascript"></script>
 </body>
 </html>

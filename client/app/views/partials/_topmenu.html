@@ -1,38 +1,50 @@
-<div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-    </div>
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <div class="col-md-offset-2">
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="row">
+        <div class="col-md-2">
+            {{ $parent.showProfile }}
+            <div ng-click="$parent.showProfile = !showProfile" class="pull-right hide-profile"><i class="fa fa-angle-double-left"></i></div>
+        </div>
+        <div class="col-md-10">
             <ul class="nav navbar-nav">
-                <li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-home"></i><div class="triangle"></div></a></li>
-                <li ui-sref-active="active"><a ui-sref="progression"><i class="fa fa-area-chart"></i><div class="triangle"></div></a></li>
-                <li ui-sref-active="active"><a ui-sref="goals"><i class="fa fa-flag-checkered"></i><div class="triangle"></div></a></li>
-                <li ui-sref-active="active"><a ui-sref="workouts"><i class="fa flaticon-dumbbell"></i><div class="triangle"></div></a></li>
-                <li ui-sref-active="active"><a ui-sref="recipes"><i class="fa fa-cutlery"></i><div class="triangle"></div></a></li>
-                <li ui-sref-active="active"><a ui-sref="logbook"><i class="fa fa-folder-open"></i><div class="triangle"></div></a></li>
-                <!--<li class="dropdown">-->
-                    <!--<a href="" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>-->
-                    <!--<ul class="dropdown-menu" role="menu">-->
-                        <!--<li><a href="#">Action</a></li>-->
-                        <!--<li><a href="#">Another action</a></li>-->
-                        <!--<li><a href="#">Something else here</a></li>-->
-                        <!--<li class="divider"></li>-->
-                        <!--<li><a href="#">Separated link</a></li>-->
-                        <!--<li class="divider"></li>-->
-                        <!--<li><a href="#">One more separated link</a></li>-->
-                    <!--</ul>-->
-                <!--</li>-->
+                <li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-home"></i>
+
+                    <div class="triangle"></div>
+                </a></li>
+                <li ui-sref-active="active">
+                    <a ui-sref="progression"><i class="fa fa-area-chart"></i>
+
+                        <div class="triangle"></div>
+                    </a>
+                </li>
+                <li ui-sref-active="active"><a ui-sref="goals"><i class="fa fa-flag-checkered"></i>
+
+                    <div class="triangle"></div>
+                </a></li>
+                <li ui-sref-active="active"><a ui-sref="workouts"><i class="fa flaticon-dumbbell"></i>
+
+                    <div class="triangle"></div>
+                </a></li>
+                <li ui-sref-active="active"><a ui-sref="recipes"><i class="fa fa-cutlery"></i>
+
+                    <div class="triangle"></div>
+                </a></li>
+                <li ui-sref-active="active"><a ui-sref="logbook"><i class="fa fa-folder-open"></i>
+
+                    <div class="triangle"></div>
+                </a></li>
             </ul>
         </div>
     </div>
-    <!-- /.navbar-collapse -->
-</div><!-- /.container-fluid -->
+</div>
+<!-- /.navbar-collapse -->

@@ -5,6 +5,19 @@
     margin: 0px;
   }
 
+  .ng-hide-add {
+    @include transition('opacity 1s ease-in-out');
+  }
+
+  .ng-hide-add, .ng-hide-active {
+    opacity: 0;
+  }
+
+  .ng-hide-remove {
+    left: 0;
+    @include transition('opacity 1s ease-in-out');
+  }
+
   .well {
     padding: 10px 0px 0px 0px;
     background-color: #f9f9f9;

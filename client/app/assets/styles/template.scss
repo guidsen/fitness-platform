@@ -15,6 +15,13 @@
   background: rgba($color, $opacity);
 }
 
+@mixin transition($input) {
+  transition: $input;
+  -moz-transition: $input;
+  -o-transition: $input;
+  -webkit-transition: $input;
+}
+
 $main_color: #37BC9B;
 $border_grey: #E7E7E7;
 $delay: 0.15s;
@@ -23,6 +30,19 @@ $delay: 0.15s;
 @import "partials/_top-navigation";
 @import "pages/_workout";
 @import "pages/_location";
+
+body {
+  background-color: #E0E0E0;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+}
+
+.well, .panel, .jumbotron {
+  border-color: #d2d2d2;
+  box-shadow: 0 1px 0 #cfcfcf;
+  border-radius: 3px;
+}
 
 .clear-float {
   clear: both;
