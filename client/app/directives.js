@@ -13,7 +13,7 @@ fitnessApp.directive('likeable', function ($interval) {
                     elem.find('.workout-like').removeClass("liked");
                 };
 
-                setTimeout(func, 300);
+                setTimeout(func, 150);
             })
         }
     }

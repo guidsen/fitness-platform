@@ -129,6 +129,8 @@
     border-top: 1px solid #E0E0E0;
     border-left: 1px solid #E7E7E7;
     border-right: 1px solid #E7E7E7; }
+    .workout-container .workout-inner:hover .workout-like {
+      display: block; }
     .workout-container .workout-inner .workout-item {
       float: left;
       background-color: #FAFAFA;
@@ -189,13 +191,12 @@
     border-top-left-radius: 4px;
     cursor: pointer;
     padding: 10px;
-    color: #37BC9B;
     font-size: 16px;
     transition: opacity 0.15s;
     -moz-transition: opacity 0.15s;
     -o-transition: opacity 0.15s;
     -webkit-transition: opacity 0.15s;
-    background-color: rgba(226, 230, 230, 0.7); }
+    background-color: rgba(245, 245, 245, 0.7); }
     .workout-container .workout-like.liked {
       opacity: 1; }
     .workout-container .workout-like .workout-overlay-background {
@@ -214,7 +215,7 @@
       display: inline-block;
       vertical-align: middle;
       font-size: 38px;
-      color: #37BC9B;
+      color: #ff878d;
       line-height: 90px; }
     .workout-container .workout-like span {
       font-weight: 600;

@@ -23,6 +23,10 @@ $sub_color: #ABB7B7;
     border-left: 1px solid $border_grey;
     border-right: 1px solid $border_grey;
 
+    &:hover .workout-like {
+      display: block;
+    }
+
     .workout-item {
       float: left;
       background-color: #FAFAFA;
@@ -113,10 +117,9 @@ $sub_color: #ABB7B7;
     border-top-left-radius: 4px;
     cursor: pointer;
     padding: 10px;
-    color: $main_color;
     font-size: 16px;
     @include transition(opacity);
-    background-color: rgba(lighten($sub_color, 20), 0.7);
+    background-color: rgba(darken(#FAFAFA, 2), 0.7);
 
     &.liked {
       opacity: 1;
@@ -140,7 +143,7 @@ $sub_color: #ABB7B7;
       display: inline-block;
       vertical-align: middle;
       font-size: 38px;
-      color: $main_color;
+      color: #ff878d;
       line-height: 90px;
     }
 
@@ -174,7 +177,7 @@ $sub_color: #ABB7B7;
       }
 
       .fa-heart {
-        color: lighten(#ff0814, 25);
+        color: #ff878d;
       }
 
       .fa-comment {
