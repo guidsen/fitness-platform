@@ -26,7 +26,6 @@ $main_color: #37BC9B;
 $border_grey: #E7E7E7;
 $delay: .5s;
 
-
 @import "partials/_side-navigation";
 @import "partials/_top-navigation";
 @import "pages/_workout";
@@ -92,12 +91,4 @@ hr {
 
 [ui-view].ng-enter-active, [ui-view].ng-leave {
   opacity: 1;
-}
-
-.content {
-  @include transition(margin-left);
-}
-
-.content.col-md-offset-2 {
-  margin-left: calc(16.66666667% - 15px);
 }
