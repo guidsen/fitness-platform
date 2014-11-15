@@ -103,12 +103,7 @@ $sub_color: #ABB7B7;
     }
   }
 
-  .workout-inner:hover .workout-overlay {
-    display: block;
-    pointer-events: none;
-  }
-
-  .workout-overlay {
+  .workout-like {
     display: none;
     position: absolute;
     top: 0;
@@ -140,7 +135,7 @@ $sub_color: #ABB7B7;
       vertical-align: middle;
       font-size: 38px;
       color: $main_color;
-      margin-top: -28px;
+      line-height: 90px;
     }
 
     span {

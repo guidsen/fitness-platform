@@ -9,7 +9,7 @@
 <div class="row">
     <div ng-repeat="workout in workouts" class="col-md-6 workout-container">
         <div class="workout-inner">
-            <div class="col-md-11 workout-item">
+            <div class="col-md-11 workout-item" likeable>
                 <div class="col-md-2 date text-center">
                     <span class="fa-stack fa-1x">
                         <i class="fa fa-calendar-o fa-stack-2x"></i>
@@ -40,11 +40,9 @@
                     <div class="head"><i class="fa fa-bars"></i> Spieren beoefend:</div>
                     {{::workout.muscles_used}}
                 </div>
-                <!--<div class="workout-overlay text-center">-->
-                <!--<div class="workout-overlay-background">-->
-                <!--<i class="fa fa-sign-in"></i> <span>Bekijken</span>-->
-                <!--</div>-->
-                <!--</div>-->
+                <div class="workout-like text-center">
+                    <i class="fa fa-heart"></i>
+                </div>
                 </a>
             </div>
             <div class="workout-link col-md-1">

@@ -182,10 +182,7 @@
       vertical-align: top;
       padding: 2px 0;
       font-size: 14px; }
-  .workout-container .workout-inner:hover .workout-overlay {
-    display: block;
-    pointer-events: none; }
-  .workout-container .workout-overlay {
+  .workout-container .workout-like {
     display: none;
     position: absolute;
     top: 0;
@@ -197,25 +194,25 @@
     padding: 10px;
     color: #37BC9B;
     font-size: 16px; }
-    .workout-container .workout-overlay .workout-overlay-background {
+    .workout-container .workout-like .workout-overlay-background {
       background: #e2e6e6;
       /* The Fallback */
       background: rgba(226, 230, 230, 0.5);
       height: 100%;
       width: 100%;
       border-radius: 4px; }
-      .workout-container .workout-overlay .workout-overlay-background:before {
+      .workout-container .workout-like .workout-overlay-background:before {
         content: '';
         display: inline-block;
         height: 100%;
         vertical-align: middle; }
-    .workout-container .workout-overlay .fa {
+    .workout-container .workout-like .fa {
       display: inline-block;
       vertical-align: middle;
       font-size: 38px;
       color: #37BC9B;
-      margin-top: -28px; }
-    .workout-container .workout-overlay span {
+      line-height: 90px; }
+    .workout-container .workout-like span {
       font-weight: 600;
       position: relative;
       top: -12px;
