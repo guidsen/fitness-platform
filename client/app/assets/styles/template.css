@@ -130,6 +130,7 @@
     border-left: 1px solid #E7E7E7;
     border-right: 1px solid #E7E7E7; }
     .workout-container .workout-inner .workout-item {
+      float: left;
       background-color: #FAFAFA;
       color: #434a54;
       padding: 10px;
@@ -142,6 +143,21 @@
         -moz-user-select: none;
         -ms-user-select: none;
         cursor: pointer; }
+    .workout-container .workout-inner .workout-link {
+      padding: 0;
+      height: 100px;
+      font-size: 25px;
+      background-color: whitesmoke; }
+      .workout-container .workout-inner .workout-link:hover {
+        background-color: #f2f2f2; }
+      .workout-container .workout-inner .workout-link a {
+        color: #37BC9B; }
+        .workout-container .workout-inner .workout-link a:hover {
+          color: #2b957a; }
+      .workout-container .workout-inner .workout-link i {
+        width: 100%;
+        text-align: center;
+        line-height: 100px; }
     .workout-container .workout-inner .date {
       font-size: 23px; }
       .workout-container .workout-inner .date .calendar-text {
@@ -349,10 +365,13 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: 'Roboto', sans-serif; }
 
+.form-control:focus {
+  border-color: #37BC9B; }
+
 .well, .panel, .jumbotron {
   border-color: #d2d2d2;
   box-shadow: 0 1px 0 #cfcfcf;
-  border-radius: 3px; }
+  border-radius: 4px; }
 
 .clear-float {
   clear: both; }
