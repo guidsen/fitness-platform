@@ -1,9 +1,5 @@
 .side-navigation {
-  margin-left: -15px;
-  transition: margin-left 0.5s;
-  -moz-transition: margin-left 0.5s;
-  -o-transition: margin-left 0.5s;
-  -webkit-transition: margin-left 0.5s; }
+  margin-left: -15px; }
   .side-navigation .nav-stacked > li + li {
     margin: 0px; }
   .side-navigation .ng-hide-add {
@@ -22,13 +18,14 @@
   .side-navigation .well {
     padding: 10px 0px 0px 0px;
     background-color: #f9f9f9;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -webkit-transition: all 0.5s; }
+    border-radius: 0 0 3px 0;
+    width: 100%;
+    transition: margin-left 0.5s;
+    -moz-transition: margin-left 0.5s;
+    -o-transition: margin-left 0.5s;
+    -webkit-transition: margin-left 0.5s; }
+  .side-navigation:not(.open) .well {
+    margin-left: -100%; }
   .side-navigation .nav-header {
     text-transform: uppercase;
     padding: 10px 15px;
@@ -70,9 +67,6 @@
   font-size: 20px;
   margin: 10px 0px;
   font-weight: 700; }
-
-.side-navigation:not(.open) {
-  margin-left: -16.66666667%; }
 
 .top-navigation.navbar {
   background-color: #37BC9B;
@@ -398,14 +392,5 @@ hr {
 
 [ui-view].ng-enter-active, [ui-view].ng-leave {
   opacity: 1; }
-
-.content {
-  transition: margin-left 0.5s;
-  -moz-transition: margin-left 0.5s;
-  -o-transition: margin-left 0.5s;
-  -webkit-transition: margin-left 0.5s; }
-
-.content.col-md-offset-2 {
-  margin-left: calc(16.66666667% - 15px); }
 
 /*# sourceMappingURL=template.css.map */

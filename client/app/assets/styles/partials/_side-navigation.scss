@@ -1,6 +1,5 @@
 .side-navigation {
   margin-left: -15px;
-  @include transition(margin-left);
 
   .nav-stacked > li + li {
     margin: 0px;
@@ -22,10 +21,13 @@
   .well {
     padding: 10px 0px 0px 0px;
     background-color: #f9f9f9;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    @include transition(all);
+    border-radius: 0 0 3px 0;
+    width: 100%;
+    @include transition(margin-left);
+  }
+
+  &:not(.open) .well {
+    margin-left: -100%;
   }
 
   .nav-header {
@@ -85,8 +87,4 @@
   font-size: 20px;
   margin: 10px 0px;
   font-weight: 700;
-}
-
-.side-navigation:not(.open) {
-  margin-left: -16.66666667%;
 }
