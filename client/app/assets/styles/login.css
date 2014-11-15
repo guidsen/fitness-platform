@@ -8,6 +8,8 @@ body {
     display: inline-block;
     vertical-align: middle;
     color: #fff; }
+    body #login h1 {
+      margin-top: 0; }
     body #login i {
       font-size: 156px;
       color: #58ceb1; }

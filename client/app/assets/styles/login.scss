@@ -12,6 +12,10 @@ body{
     vertical-align: middle;
     color: #fff;
 
+    h1 {
+      margin-top: 0;
+    }
+
     i{
       font-size: 156px;
       color: lighten($main_color, 10);
