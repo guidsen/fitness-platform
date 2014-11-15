@@ -39,10 +39,14 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.form-control:focus {
+  border-color: $main_color;
+}
+
 .well, .panel, .jumbotron {
   border-color: #d2d2d2;
   box-shadow: 0 1px 0 #cfcfcf;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .clear-float {
