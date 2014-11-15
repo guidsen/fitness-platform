@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c92901f0-c4a9-48d6-a6d8-2558a108d323" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/assets/styles/pages/_workout.scss" afterPath="$PROJECT_DIR$/client/app/assets/styles/pages/_workout.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/directives.js" afterPath="$PROJECT_DIR$/client/app/directives.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/assets/styles/template.css.map" afterPath="$PROJECT_DIR$/client/app/assets/styles/template.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/assets/styles/template.css" afterPath="$PROJECT_DIR$/client/app/assets/styles/template.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/assets/styles/template.scss" afterPath="$PROJECT_DIR$/client/app/assets/styles/template.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/views/workouts.html" afterPath="$PROJECT_DIR$/client/app/views/workouts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fitness.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +29,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="template.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="template.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/app/assets/styles/template.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="28" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.52307695" vertical-offset="391" max-vertical-offset="1683">
+            <state line="40" column="21" selection-start="1028" selection-end="1028" vertical-scroll-proportion="-11.115385" vertical-offset="391" max-vertical-offset="1683">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_workout.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/app/assets/styles/pages/_workout.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="157" column="21" selection-start="2798" selection-end="2798" vertical-scroll-proportion="0.2905983" vertical-offset="2499" max-vertical-offset="4896">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workouts.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/app/views/workouts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="54" selection-start="1969" selection-end="1969" vertical-scroll-proportion="-11.769231" vertical-offset="408" max-vertical-offset="1139">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorkoutController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/app/controllers/WorkoutController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="29" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="1259" max-vertical-offset="1870">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/app/directives.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="34" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
               <folding />
             </state>
           </provider>
@@ -55,6 +92,11 @@
         <option value="$PROJECT_DIR$/client/app/views/partials/_topmenu.html" />
         <option value="$PROJECT_DIR$/client/app/assets/styles/partials/_top-navigation.scss" />
         <option value="$PROJECT_DIR$/client/app/assets/styles/template.scss" />
+        <option value="$PROJECT_DIR$/client/app/assets/styles/login.scss" />
+        <option value="$PROJECT_DIR$/client/app/login.html" />
+        <option value="$PROJECT_DIR$/client/app/views/workouts.html" />
+        <option value="$PROJECT_DIR$/client/app/directives.js" />
+        <option value="$PROJECT_DIR$/client/app/assets/styles/pages/_workout.scss" />
       </list>
     </option>
   </component>
@@ -234,6 +276,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fitness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fitness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fitness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fitness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -261,6 +347,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -331,15 +425,19 @@
       <created>1416093468496</created>
       <updated>1416093468496</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changed login page">
+      <created>1416094102412</created>
+      <updated>1416094102412</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32947367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32947367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -376,7 +474,8 @@
     <MESSAGE value="Menu" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;client/app/assets/styles/partials/_top-navigation.scss&#10;&#9;client/app/assets/styles/template.css&#10;&#9;client/app/assets/styles/template.css.map&#10;" />
     <MESSAGE value="N/A" />
-    <option name="LAST_COMMIT_MESSAGE" value="N/A" />
+    <MESSAGE value="Changed login page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed login page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -459,9 +558,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="36" selection-start="892" selection-end="892" vertical-scroll-proportion="0.52307695" vertical-offset="0" max-vertical-offset="585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/assets/styles/login.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="20" selection-start="250" selection-end="250" vertical-scroll-proportion="0.43589744" vertical-offset="0" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/views/workouts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="54" selection-start="1969" selection-end="1969" vertical-scroll-proportion="-11.769231" vertical-offset="408" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/assets/styles/template.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="28" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.52307695" vertical-offset="391" max-vertical-offset="1683">
+        <state line="40" column="21" selection-start="1028" selection-end="1028" vertical-scroll-proportion="-11.115385" vertical-offset="391" max-vertical-offset="1683">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="34" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/controllers/WorkoutController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="29" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="1259" max-vertical-offset="1870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/assets/styles/pages/_workout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="157" column="21" selection-start="2798" selection-end="2798" vertical-scroll-proportion="0.2905983" vertical-offset="2499" max-vertical-offset="4896">
           <folding />
         </state>
       </provider>

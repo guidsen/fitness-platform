@@ -180,17 +180,24 @@
       padding: 2px 0;
       font-size: 14px; }
   .workout-container .workout-like {
-    display: none;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 4px;
+    border-top-left-radius: 4px;
     cursor: pointer;
     padding: 10px;
     color: #37BC9B;
-    font-size: 16px; }
+    font-size: 16px;
+    transition: opacity 0.15s;
+    -moz-transition: opacity 0.15s;
+    -o-transition: opacity 0.15s;
+    -webkit-transition: opacity 0.15s;
+    background-color: rgba(226, 230, 230, 0.7); }
+    .workout-container .workout-like.liked {
+      opacity: 1; }
     .workout-container .workout-like .workout-overlay-background {
       background: #e2e6e6;
       /* The Fallback */
@@ -216,7 +223,7 @@
       padding-left: 5px; }
   .workout-container .workout-social {
     font-size: 13px;
-    background-color: #e2e6e6;
+    background-color: #e7ebeb;
     overflow: hidden;
     padding: 5px 10px;
     box-shadow: 0 1px 0 #cfcfcf;

@@ -7,11 +7,13 @@ fitnessApp.directive('likeable', function ($interval) {
             console.log(elem);
 
             elem.on('dblclick', function (e) {
-                elem.find('.workout-like').show();
+                elem.find('.workout-like').addClass("liked");
 
-                $interval(function () {
-                    elem.find('.workout-like').hide()
-                }, 300);
+                var func = function () {
+                    elem.find('.workout-like').removeClass("liked");
+                };
+
+                setTimeout(func, 300);
             })
         }
     }
