@@ -12,36 +12,18 @@
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <div class="row">
         <div class="col-md-2">
-            <div ng-click="$parent.showProfile = !showProfile" class="pull-right hide-profile"><i ng-class="{'fa-angle-double-left': showProfile, 'fa-angle-double-right': !showProfile}" class="fa"></i></div>
+            <div ng-click="$parent.showProfile = !showProfile" ng-class="{'right': showProfile, 'left': !showProfile}" class="right hide-profile"><i ng-class="{'fa-angle-double-left': showProfile, 'fa-angle-double-right': !showProfile}" class="fa"></i></div>
         </div>
         <div class="col-md-10">
             <ul class="nav navbar-nav">
-                <li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-home"></i>
-
-                    <div class="triangle"></div>
-                </a></li>
+                <li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-home"></i></a></li>
                 <li ui-sref-active="active">
-                    <a ui-sref="progression"><i class="fa fa-area-chart"></i>
-
-                        <div class="triangle"></div>
-                    </a>
+                    <a ui-sref="progression"><i class="fa fa-area-chart"></i></a>
                 </li>
-                <li ui-sref-active="active"><a ui-sref="goals"><i class="fa fa-flag-checkered"></i>
-
-                    <div class="triangle"></div>
-                </a></li>
-                <li ui-sref-active="active"><a ui-sref="workouts"><i class="fa flaticon-dumbbell"></i>
-
-                    <div class="triangle"></div>
-                </a></li>
-                <li ui-sref-active="active"><a ui-sref="recipes"><i class="fa fa-cutlery"></i>
-
-                    <div class="triangle"></div>
-                </a></li>
-                <li ui-sref-active="active"><a ui-sref="logbook"><i class="fa fa-folder-open"></i>
-
-                    <div class="triangle"></div>
-                </a></li>
+                <li ui-sref-active="active"><a ui-sref="goals"><i class="fa fa-flag-checkered"></i></a></li>
+                <li ui-sref-active="active"><a ui-sref="workouts"><i class="fa flaticon-dumbbell"></i></a></li>
+                <li ui-sref-active="active"><a ui-sref="recipes"><i class="fa fa-cutlery"></i></a></li>
+                <li ui-sref-active="active"><a ui-sref="logbook"><i class="fa fa-folder-open"></i></a></li>
             </ul>
         </div>
     </div>
