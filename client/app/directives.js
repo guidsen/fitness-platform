@@ -3,17 +3,18 @@ var fitnessApp = angular.module('fitnessApp');
 fitnessApp.directive('likeable', function ($interval) {
     return {
         restrict: 'A',
+        scope: '=',
         link: function (scope, elem, attr) {
-            console.log(elem);
-
             elem.on('dblclick', function (e) {
+                scope.$apply(function() {
+                    scope.workout.likes += 1;
+                })
+
                 elem.find('.workout-like').addClass("liked");
 
-                var func = function () {
+                setTimeout(function () {
                     elem.find('.workout-like').removeClass("liked");
-                };
-
-                setTimeout(func, 150);
+                }, 150);
             })
         }
     }
