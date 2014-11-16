@@ -1,4 +1,5 @@
 $sub_color: #ABB7B7;
+$like_color: #ff878d;
 
 .workout-legend {
   font-size: 13px;
@@ -42,6 +43,13 @@ $sub_color: #ABB7B7;
         -moz-user-select: none;
         -ms-user-select: none;
         cursor: pointer;
+
+        .workout-like {
+          opacity: 1;
+          .fa {
+            color: lighten($like_color, 15);
+          }
+        }
       }
     }
 
@@ -119,10 +127,14 @@ $sub_color: #ABB7B7;
     padding: 10px;
     font-size: 16px;
     @include transition(opacity);
-    background-color: rgba(darken(#FAFAFA, 2), 0.7);
+    background-color: rgba(darken(#FAFAFA, 2), 0.3);
 
     &.liked {
-      opacity: 1;
+      opacity: 1!important;
+
+      .fa {
+        color: $like_color!important;
+      }
     }
 
     .workout-overlay-background {
@@ -143,8 +155,8 @@ $sub_color: #ABB7B7;
       display: inline-block;
       vertical-align: middle;
       font-size: 38px;
-      color: #ff878d;
       line-height: 90px;
+      color: lighten($like_color, 15);
     }
 
     span {

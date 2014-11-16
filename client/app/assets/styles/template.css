@@ -145,6 +145,10 @@
         -moz-user-select: none;
         -ms-user-select: none;
         cursor: pointer; }
+        .workout-container .workout-inner .workout-item:hover .workout-like {
+          opacity: 1; }
+          .workout-container .workout-inner .workout-item:hover .workout-like .fa {
+            color: #ffd3d6; }
     .workout-container .workout-inner .workout-link {
       padding: 0;
       height: 100px;
@@ -196,9 +200,11 @@
     -moz-transition: opacity 0.15s;
     -o-transition: opacity 0.15s;
     -webkit-transition: opacity 0.15s;
-    background-color: rgba(245, 245, 245, 0.7); }
+    background-color: rgba(245, 245, 245, 0.3); }
     .workout-container .workout-like.liked {
-      opacity: 1; }
+      opacity: 1 !important; }
+      .workout-container .workout-like.liked .fa {
+        color: #ff878d !important; }
     .workout-container .workout-like .workout-overlay-background {
       background: #e2e6e6;
       /* The Fallback */
@@ -215,8 +221,8 @@
       display: inline-block;
       vertical-align: middle;
       font-size: 38px;
-      color: #ff878d;
-      line-height: 90px; }
+      line-height: 90px;
+      color: #ffd3d6; }
     .workout-container .workout-like span {
       font-weight: 600;
       position: relative;

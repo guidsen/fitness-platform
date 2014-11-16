@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c92901f0-c4a9-48d6-a6d8-2558a108d323" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/assets/styles/pages/_workout.scss" afterPath="$PROJECT_DIR$/client/app/assets/styles/pages/_workout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/directives.js" afterPath="$PROJECT_DIR$/client/app/directives.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/assets/styles/template.css.map" afterPath="$PROJECT_DIR$/client/app/assets/styles/template.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/assets/styles/template.css" afterPath="$PROJECT_DIR$/client/app/assets/styles/template.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -41,7 +40,7 @@
       <file leaf-file-name="_workout.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/app/assets/styles/pages/_workout.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="21" selection-start="2798" selection-end="2798" vertical-scroll-proportion="0.2905983" vertical-offset="2499" max-vertical-offset="4896">
+            <state line="157" column="24" selection-start="2789" selection-end="2789" vertical-scroll-proportion="0.5521368" vertical-offset="2346" max-vertical-offset="5151">
               <folding />
             </state>
           </provider>
@@ -60,15 +59,6 @@
         <entry file="file://$PROJECT_DIR$/client/app/controllers/WorkoutController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="24" column="29" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="1259" max-vertical-offset="1870">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/directives.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="34" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
               <folding />
             </state>
           </provider>
@@ -429,7 +419,11 @@
       <created>1416094102412</created>
       <updated>1416094102412</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Like overlay">
+      <created>1416095365883</created>
+      <updated>1416095365883</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -475,7 +469,8 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;client/app/assets/styles/partials/_top-navigation.scss&#10;&#9;client/app/assets/styles/template.css&#10;&#9;client/app/assets/styles/template.css.map&#10;" />
     <MESSAGE value="N/A" />
     <MESSAGE value="Changed login page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed login page" />
+    <MESSAGE value="Like overlay" />
+    <option name="LAST_COMMIT_MESSAGE" value="Like overlay" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -572,13 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/views/workouts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="54" selection-start="1969" selection-end="1969" vertical-scroll-proportion="-11.769231" vertical-offset="408" max-vertical-offset="1139">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/assets/styles/template.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="21" selection-start="1028" selection-end="1028" vertical-scroll-proportion="-11.115385" vertical-offset="391" max-vertical-offset="1683">
@@ -588,7 +576,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/directives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="34" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+        <state line="19" column="2" selection-start="529" selection-end="529" vertical-scroll-proportion="0.5286416" vertical-offset="0" max-vertical-offset="611">
           <folding />
         </state>
       </provider>
@@ -600,9 +588,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/views/workouts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="54" selection-start="1969" selection-end="1969" vertical-scroll-proportion="-11.769231" vertical-offset="408" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/assets/styles/pages/_workout.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="21" selection-start="2798" selection-end="2798" vertical-scroll-proportion="0.2905983" vertical-offset="2499" max-vertical-offset="4896">
+        <state line="157" column="24" selection-start="2789" selection-end="2789" vertical-scroll-proportion="0.5521368" vertical-offset="2346" max-vertical-offset="5151">
           <folding />
         </state>
       </provider>
